@@ -1,0 +1,373 @@
+*{margin:0; padding:0;}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{}
+
+header, img{
+	width: 100%;
+	height: 250px;
+}
+
+nav{
+	background-color: #00BCD4 ;
+	text-align: center;
+	padding: 10px;
+}
+
+a{
+	color: black;
+	font: 1.2rem 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+
+.a-menu{
+	margin-right: 40px;
+	font-weight: bold;
+}
+
+/*cmd para mudar a cor dos links ao passar o mouse*/
+.a-menu:link, .a-menu:visited{
+	color: #FFF;
+}
+
+.a-menu:hover, .a-menu:active{
+	color: #3F51B5;
+}
+
+article{
+	background-color: #FFF;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+h1{
+	font: 3rem "Kaushan Script", cursive;
+	color: #3F51B5;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+p{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #009688;
+	text-align: justify;
+	/*text-indent:20px; = da o espaçamento de parágrafo*/
+	line-height: 30px;
+}
+
+article p{
+	text-align: center;
+}
+
+#txt-preto{
+	color:#000;
+}
+
+section {}
+
+h2 , h1{
+	/* h2 original
+	text-align: center;
+	font: 3rem "Kaushan Script", cursive;
+	color: #3F51B5;
+	margin-bottom: 40px;*/
+
+
+
+/*h2 com animação*/
+	    font: 3rem "Kaushan Script", cursive;
+		margin-bottom: 30px;
+	    text-align: center;
+	    font-size: 45px;
+	    color: #3F51B5;
+	    text-shadow: 0 0 10px 3F51B5;
+	    animation: brilho 1.0s infinite alternate;
+}
+
+@keyframes brilho {
+    from {
+        text-shadow: 0 0 5px black;
+    }
+
+    to {
+        text-shadow: 0 0 20px white;
+    }
+
+}
+
+
+
+/*se eu quiser mudar um h2 específico, coloco o id da section que esta inserido o h2 
+ex:#pag-brinquedos h2{
+	color: #3F51B5;
+}*/
+
+#pag-brinquedos{
+	background-color: rgba(FFF);
+    padding: 20px;
+}
+
+#pag-barraquinhas{
+	background-color: rgba(FFF);
+	padding: 20px;
+}
+
+#pag-barraquinhas h2{
+	margin-bottom: 50px;
+}
+
+#pag-conhecaNossoTrabalho{
+	background-color: #fff;
+}
+
+#pag-conhecaNossoTrabalho h2 {
+	text-align: center;
+	margin-top: 30px;
+   
+
+}
+
+#container-brinquedos{
+	display: flex;
+  	flex-wrap: wrap;
+  	gap: 16px; 
+}
+
+#container-barraquinhas{
+	display:flex;
+	flex-wrap: wrap;
+  	gap: 16px; 
+
+}
+
+.card{
+	width: calc(350px - 20px);
+	box-sizing: border-box;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px #CCC;
+	display: block;
+    margin: 0 auto;
+
+   margin-bottom: 20px;
+}
+
+.card:hover{
+	box-shadow: 0 8px 16px #777;
+	
+}
+
+.card-titulo{
+	padding: 10px;
+}
+
+.card-titulo p{
+	font: 1rem 'Roboto', sans-serif;
+	line-height: 20px;
+}
+
+h3{
+	font: 1.5rem "Kaushan Script", cursive;
+	color: #00BCD4;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#container-video{
+	display: flex;
+}
+
+#container-video p{
+	text-align: center;
+	padding: 5px;
+
+}
+
+.coluna-video{
+	padding: 40px;
+}
+
+.container-imagem{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-imagem a:hover{
+	color:#00BCD4;
+}
+
+
+#icones{
+	display: flex;
+	margin-left: 45%;
+
+}
+
+.img-icones{
+	width: 50px;
+	height: 50px;
+	align-items: center;
+	margin-right: 30px;
+
+}
+
+video{
+	width: 400px;
+	height: 500px;
+}
+
+footer{
+	background-color: #00BCD4;
+	padding: 15px;
+}
+
+/* cmds modificar os links do footer 
+footer p{
+	text-align: center;
+	color:#FFF;
+}
+footer a{
+	color:#FFF;
+}
+
+footer a:hover{
+	color:#00BCD4;
+}*/
+
+/* IMAGEM AMPLIADA */
+#imagemAmpliada {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#imagemAmpliada img {
+    width: auto;
+    height: auto;
+    max-width: 98%;
+    max-height: 95%;
+    object-fit: contain;
+    cursor: zoom-out;
+}
+
+/*celulares*/
+@media (max-width: 600px) {
+    #imagemAmpliada img {
+        max-width: 100%;
+        max-height: 85%;
+    }
+}
+
+
+
+/*Página agendamentos*/
+#pag-agendamentos{
+
+}
+
+form{
+ 	width: 400px; margin: 0 auto; 
+}	
+
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #808080;
+}
+
+label, fieldset, input, select, textarea{
+	font: 1rem 'Roboto', sans-serif;
+
+}
+fieldset{
+	border: 1px solid #C4C4C4;
+	margin-bottom: 10px;
+}
+
+#data-hora{
+	display: flex;
+}
+
+.data, .hora{
+	width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+textarea{
+	height: 80px;
+}
+
+#botoes{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin:20px;
+	background-color: #8BC34A;
+	color:#FFF;
+	border: 0;
+	border-radius: 5px;
+}
+input[type="reset"]{
+	background-color:#F47E7E
+}
+
+/*confetes */
+.confetes-fundo {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.confete {
+    position: absolute;
+    width: 8px;
+    height: 13px;
+    border-radius: 2px;
+}
+
+
+/* CONTEÚDO ACIMA DOS CONFETES */
+
+header,
+nav,
+article,
+section,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* CONFETES ATRÁS DO CONTEÚDO */
+.confetes-fundo {
+    z-index: 0;
+    pointer-events: none;
+}
+
+
