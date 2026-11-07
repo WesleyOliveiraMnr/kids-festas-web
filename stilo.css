@@ -200,7 +200,7 @@ ex:#pag-brinquedos h2{
 }
 
 h3{
-	font: 1.5rem "Kaushan Script", cursive;
+	font: 2rem "Kaushan Script", cursive;
 	color: #00BCD4;
 	text-align: center;
 	margin-bottom: 10px;
@@ -219,7 +219,8 @@ h3{
 }
 
 #container-video p {
-    text-align: center;
+    font:"Kaushan Script", cursive;
+	text-align: center;
     padding: 10px;
     line-height: 1.8;
 }
