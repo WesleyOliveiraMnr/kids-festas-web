@@ -19,7 +19,7 @@ header img {
 
 nav{
 	background-color: #00BCD4 ;
-	padding: 10px;
+	padding: 0px;
     display: flex;
 }
 
@@ -452,27 +452,45 @@ footer {
     }
 
   
-    nav {
+   /* 
+	nav {
         display: flex;
         flex-direction: row;
-    /*justify-content: center;*/
-    /*align-items: center;*/
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
         padding: 8px 5px;
         gap: 5px;
     }
+	*/
+	nav{
+	 display: flex;
+        justify-content: space-between; /* Distribui as opções igualmente na tela */
+    }
 
-    nav .a-menu {
+
+	nav .a-menu{
+		display: inline-block;
+        flex: 1;                 /* Faz cada item ocupar o mesmo tamanho */
+        margin: 0;
+        padding: 8px 4px;        /* Reduzido drasticamente o espaço lateral */
+        font-size: 11px;         /* Fonte menor para o texto "conheça nosso trabalho" não quebrar */
+        text-align: center;
+        border-bottom: none;
+    }
+  
+	/*
+	nav .a-menu {
         display: inline-block;
         width: auto;
         margin: 0;
         padding: 8px 10px;
-        font-size: 14px;
+        font-size: 7px;
         text-align: center;
         border-bottom: none;
     }
-
+	*/
 
     /* TEXTO EM CIMA E VIDEO EMBAIXO */
     #container-video {
