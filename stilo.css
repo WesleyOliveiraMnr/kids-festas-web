@@ -466,7 +466,8 @@ footer {
 	*/
 	nav{
 	 display: flex;
-        justify-content: space-between; /* Distribui as opções igualmente na tela */
+     justify-content: space-between; /* Distribui as opções igualmente na tela */
+	 background-color: #757575 ;	
     }
 
 
@@ -479,7 +480,9 @@ footer {
         text-align: center;
         border-bottom: none;
     }
-  
+	footer{
+	  background-color: #757575 ;
+  }
 	/*
 	nav .a-menu {
         display: inline-block;
