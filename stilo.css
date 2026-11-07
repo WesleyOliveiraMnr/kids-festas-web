@@ -18,7 +18,7 @@ header img {
 }
 
 nav{
-	background-color: #00BCD4 ;
+	background-color: #757575 ;
 	padding: 0px;
     display: flex;
 }
@@ -67,7 +67,7 @@ h1{
 
 p{
 	font: 1.2rem 'Roboto', sans-serif;
-	color: #009688;
+	color: #757575;
 	text-align: justify;
 	/*text-indent:20px; = da o espaçamento de parágrafo*/
 	line-height: 30px;
@@ -201,7 +201,7 @@ ex:#pag-brinquedos h2{
 
 h3{
 	font: 2rem "Kaushan Script", cursive;
-	color: #00BCD4;
+	color: #D32F2F;
 	text-align: center;
 	margin-bottom: 10px;
 }
@@ -275,7 +275,7 @@ video {
 }
 
 footer{
-	background-color: #00BCD4;
+	background-color: #757575;
 	padding: 15px;
 }
 
