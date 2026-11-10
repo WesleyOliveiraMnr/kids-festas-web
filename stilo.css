@@ -57,6 +57,9 @@ article{
 	padding: 20px;
 	box-sizing: border-box;
 }
+article p{
+text-align: center;
+}
 
 h1{
 	font: 3rem "Kaushan Script", cursive;
